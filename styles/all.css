@@ -1,0 +1,112 @@
+/* fonts */
+@font-face {
+    font-family: Primary;
+    src: url(../fonts/geneva/geneva-9-2.otf);
+}
+
+/* variables */
+:root{
+    --blue: rgb(62, 62, 160) ;
+    --gradientMonitor: repeating-conic-gradient(rgb(155, 146, 207) 0%, rgba(146, 155, 207, 0) 25%, rgba(187, 174, 247, 0.267) 0%, rgba(179, 174, 247, 0.801) 50%) 50% center / 3px 3px;
+    --backgroundWhite: rgb(243, 243, 243) ;
+    --blue98 : navy ;
+}
+
+/* all pages */
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Primary;
+}
+
+/* general */
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/wallpapers/win98.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#monitorEffect{
+    width: 100%;
+    background: var(--gradientMonitor) ;
+}
+
+/* header */
+
+header{
+    background-color: var(--backgroundWhite);
+}
+
+header ul{
+    list-style: none;
+}
+
+header h1{
+    text-align: center;
+}
+
+header aside{
+    width: 40%;
+    padding: 1rem;
+}
+
+#logo{
+    width: 4rem;
+}
+
+
+/* desktop */
+#desktop{
+    padding: 1rem;
+}
+
+.folder{
+    width: 4rem;
+    cursor: pointer;
+}
+
+.folder img{
+    width: 100%;
+}
+
+.modal-dialog{
+    background-color: #c6c6c6;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.modal-content, .modal-header{
+    border-radius: 0%;
+}
+
+.modal-header{
+    color: var(--backgroundWhite);
+    background-color: var(--blue98);
+}
+
+.btn-close{
+    background-image: none;
+}
+
+.windows-button{
+    border-radius: 0%;
+    color: #000;
+    background-color: silver;
+    font-weight: 700;
+    letter-spacing: .05em;
+    border-left: 2px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+}
+
+#teste{
+    width: 10px;
+    height: 10000px;
+}
