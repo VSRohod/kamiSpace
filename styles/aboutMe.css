@@ -1,0 +1,7 @@
+#aboutMeHeader{
+    background-color: var(--pinkFrost);
+}
+
+#aboutMeTextScroll{
+    animation: 30s linear 0s infinite normal none running scroll!important;
+}
