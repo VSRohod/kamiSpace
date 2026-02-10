@@ -5,3 +5,7 @@
 #aboutMeTextScroll{
     animation: 30s linear 0s infinite normal none running scroll!important;
 }
+
+#aboutMeHeader img{
+    width: 3rem;
+}
