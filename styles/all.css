@@ -5,17 +5,17 @@
 }
 
 /* variables */
-:root{
-    --blue: rgb(62, 62, 160) ;
+:root {
+    --blue: rgb(62, 62, 160);
     --gradientMonitor: repeating-conic-gradient(rgb(155, 146, 207) 0%, rgba(146, 155, 207, 0) 25%, rgba(187, 174, 247, 0.267) 0%, rgba(179, 174, 247, 0.801) 50%) 50% center / 3px 3px;
-    --backgroundWhite: rgb(243, 243, 243) ;
-    --blue98 : navy ;
-    --pinkFrost : #EA3465 ;
-    --blueFrost : #628EEF ;
+    --backgroundWhite: rgb(243, 243, 243);
+    --blue98: navy;
+    --pinkFrost: #EA3465;
+    --blueFrost: #628EEF;
 }
 
 /* all pages */
-*{
+* {
     padding: 0%;
     margin: 0%;
     font-family: Primary;
@@ -23,7 +23,7 @@
 
 /* general */
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-image: url(../images/wallpapers/win98.jpg);
@@ -33,51 +33,66 @@ body{
     overflow-x: hidden;
 }
 
-#monitorEffect{
+/* scrollbar */
+
+body *::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background: none;
+}
+
+body *::-webkit-scrollbar-thumb {
+    background: silver;
+    box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+    border: 1px solid;
+    border-color: silver #000 #000 silver;
+}
+
+#monitorEffect {
     width: 100%;
-    background: var(--gradientMonitor) ;
+    background: var(--gradientMonitor);
 }
 
 /* header */
 
-header{
+header {
     background-color: var(--backgroundWhite);
 }
 
-header ul{
+header ul {
     list-style: none;
 }
 
-header h1{
+header h1 {
     text-align: center;
 }
 
-header aside{
+header aside {
     width: 40%;
     padding: 1rem;
 }
 
-#logo{
+#logo {
     width: 4rem;
 }
 
 
 /* desktop */
-#desktop{
+#desktop {
     padding: 1rem;
 }
 
-.folder{
+.folder {
     width: 6rem;
     height: 6rem;
     cursor: pointer;
 }
 
-.folder img{
+.folder img {
     width: 4rem;
 }
 
-.modal-dialog{
+.modal-dialog {
     background-color: #c6c6c6;
     border-top: 2px solid #efefef;
     border-left: 2px solid #efefef;
@@ -85,20 +100,21 @@ header aside{
     border-bottom: 2px solid #000;
 }
 
-.modal-content, .modal-header{
+.modal-content,
+.modal-header {
     border-radius: 0%;
 }
 
-.modal-header{
+.modal-header {
     color: var(--backgroundWhite);
     background-color: var(--blue98);
 }
 
-.btn-close{
+.btn-close {
     background-image: none;
 }
 
-.windows-button{
+.windows-button {
     border-radius: 0%;
     color: #000;
     background-color: silver;
@@ -110,6 +126,6 @@ header aside{
     border-bottom: 2px solid #404040;
 }
 
-p{
+p {
     font-size: 18pt;
 }
