@@ -1,11 +1,47 @@
-#aboutMeHeader{
+#aboutMeHeader {
     background-color: var(--pinkFrost);
 }
 
-#aboutMeTextScroll{
-    animation: 30s linear 0s infinite normal none running scroll!important;
+#aboutMeHeader img {
+    width: 3rem;
 }
 
-#aboutMeHeader img{
-    width: 3rem;
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+.scroll-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.text-row {
+  white-space: nowrap;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--blueFrost);
+}
+.infinite-scroll {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+.text-scroll {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.text-item {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.star {
+  font-size: 2rem;
+  margin: 10px 30px;
+  color: white;
 }
