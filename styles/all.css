@@ -67,12 +67,13 @@ header aside{
 }
 
 .folder{
-    width: 4rem;
+    width: 6rem;
+    height: 6rem;
     cursor: pointer;
 }
 
 .folder img{
-    width: 100%;
+    width: 4rem;
 }
 
 .modal-dialog{
