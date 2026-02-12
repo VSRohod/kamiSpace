@@ -164,7 +164,16 @@
           </div>
           <div id="devWebText">
             <p> Aqui nessa pasta falaremos sobre tecnologias direcionadas para web! Tanto de forma básica, a sua forma
-              mais avançada com direito a uns exemplos práticos direcionados </p>
+              mais avançada com direito a uns exemplos práticos direcionados. </p>
+            <h3>TÓPICOS</h3>
+            <section>
+              <div class="topicDevWeb w-50 d-flex flex-column align-items-center">
+                <img src="" alt="">
+                <div id="topicoDevWebText">
+                  <h3>HTML</h3>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -173,6 +182,13 @@
 
 
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var meuModal = new bootstrap.Modal(document.getElementById('devWebModal'));
+    meuModal.show();
+  });
+</script>
 
 <script src="scripts/bootstrap.bundle.js"></script>
 <script src="scripts/scrollTextAboutMe.js"></script>
