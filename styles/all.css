@@ -92,7 +92,7 @@ header aside {
     width: 4rem;
 }
 
-.modal-dialog {
+.modal-dialog, .content {
     background-color: #c6c6c6;
     border-top: 2px solid #efefef;
     border-left: 2px solid #efefef;
@@ -105,7 +105,7 @@ header aside {
     border-radius: 0%;
 }
 
-.modal-header {
+.modal-header , .contentHeader {
     color: var(--backgroundWhite);
     background-color: var(--blue98);
 }
@@ -124,6 +124,14 @@ header aside {
     border-top: 2px solid #ededed;
     border-right: 2px solid #404040;
     border-bottom: 2px solid #404040;
+}
+/* 
+.contentArticle {
+    height: 70vh!important;
+} */
+
+.contentHeader a{
+    text-decoration: none;
 }
 
 p {
