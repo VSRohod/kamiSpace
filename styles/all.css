@@ -125,6 +125,7 @@ header aside {
     border-right: 2px solid #404040;
     border-bottom: 2px solid #404040;
 }
+
 /* 
 .contentArticle {
     height: 70vh!important;
@@ -136,4 +137,15 @@ header aside {
 
 p {
     font-size: 18pt;
+}
+
+
+/* articles */
+.content{
+    height: 80vh!important;
+}
+
+.contentArticle{
+    height:100%!important;
+    overflow-y: scroll;
 }
