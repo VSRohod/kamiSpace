@@ -1,112 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../../styles/all.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../styles/all.css" />
     <!-- https://win98icons.alexmeub.com/ -->
     <title>KamiSpace 🐾</title>
-    <link rel="shortcut icon" href="../../images/icons/win98/computer-4.png" type="image/x-icon">
-</head>
+    <link
+      rel="shortcut icon"
+      href="../../images/icons/win98/computer-4.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body class="imageCenter d-flex flex-column">
+  <body class="imageCenter d-flex flex-column">
     <header class="d-flex justify-content-between">
-        <aside id="headerleft">
-            <ul class="d-flex gap-3 align-items-center m-0">
-                <li class="d-flex"> <img id="logo" src="../../images/frost/frostHeadPixel.png" alt=""> </li>
-                <li class="d-flex align-items-center">
-                    <h1 class="m-0">KamiSpace</h1>
-                </li>
-            </ul>
-        </aside>
-        <aside id="headerright"></aside>
+      <aside id="headerleft">
+        <ul class="d-flex gap-3 align-items-center m-0">
+          <li class="d-flex">
+            <img id="logo" src="../../images/frost/frostHeadPixel.png" alt="" />
+          </li>
+          <li class="d-flex align-items-center">
+            <h1 class="m-0">KamiSpace</h1>
+          </li>
+        </ul>
+      </aside>
+      <aside id="headerright"></aside>
     </header>
 
     <main id="monitorEffect" class="flex-grow-1">
-        <div id="desktop" class="d-flex flex-column h-100 gap-2 p-3">
-            <div class="content d-flex flex-column h-100 w-100 ">
-                <div class="contentHeader p-3 d-flex align-items-center justify-content-between">
-                    <h3 class="m-0">REACT NATIVE</h3>
-                    <div class="d-flex gap-2">
-                        <a href="reactHub.html">
-                            <button type="button"
-                                class="btn-close windows-button d-flex justify-content-center align-items-center">
-                                <- </button>
-                        </a>
-                        <a href="../../index.html">
-                            <button type="button"
-                                class="btn-close windows-button d-flex justify-content-center align-items-center">
-                                X
-                            </button>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="contentArticle p-3">
-                    <img class="mx-auto w-50 d-block" src="../../images/gifs/reactNative.gif" alt="react gif">
-                    <h1>LINKS ÚTEIS (PARA AGILIZAR PROCESSOS)</h1>
-                    <ul>
-                        <li><a target="_blank" href="https://reactnative.dev/"> REACT NATIVE </a></li>
-                        <li><a target="_blank" href="https://expo.dev/"> EXPO DEV </a></li>
-                        <li><a target="_blank" href="https://github.com/nvm-sh/nvm"> NVM </a></li>
-                        <li><a target="_blank" href="https://nodejs.org/en"> Node Js </a></li>
-                        <li><a target="_blank" href="https://expo.dev/go"> Expo Go </a></li>
-                    </ul>
-                    <h1>REACT NATIVE</h1>
-                    <p>
-                        O React Native em sua grande maioria é bem semelhante ao React padrão, porém ele tem seu foco
-                        justamente na versatilidade de poder desenvolver aplicativos tanto para Ios tanto para Android
-                        de forma fácil e eficaz. </p>
-                    <p>
-                        Existem diversos aplicativos do nosso dia a dia que inclusive acabam utilizando dessa tecnologia
-                        como Instagram, Uber Eats e Airbnb!
-                    </p>
-                    <p> Para começarmos a trabalhar com essa tecnologia, separei esse artigo em várias partes para que
-                        fique fácil o entendimento e até mesmo a pratica do mesmo!</p>
-                    <h1>PRÉ REQUISITOS</h1>
-                    <p> Obviamente estamos falando de um framework, e precisamos de alguns conhecimentos para que não
-                        fique perdido!</p>
-                    <ul>
-                        <li>
-                            <p>Básico de HTML e CSS para a montagem e a estilização da página / app</p>
-                        </li>
-                        <li>
-                            <p>Crucial conhecimentos de Javascript, extremamente fundamental ter um conhecimento com
-                                essa lingaguem até para o entendimento da estruturação e utilização dos recursos do
-                                framework</p>
-                        </li>
-                        <li>
-                            <p>Ambiente de desenvolvimento, necessário ter um ambiente configurado, uma IDE de sua
-                                escolha (VSCODE, Atom ou Sublime) . PS: Minha preferência é o VSCODE. Node Js, essencial
-                                para rodarmos o Javascript fora do navegador e para o Npm , que será utilizado para
-                                gerenciamento de pacotes (instalar e gerenciar dependencias)</p>
-                        </li>
-                    </ul>
-                    <p>Tendo todas as coisas listadas acima vamos para o começo de um projeto!</p>
-                    <h1>INSTALAÇÃO DO AMBIENTE</h1>
-                    <p>PS: 🫵 Instale todos os pré requisitos antes de seguir</p>
-                    <p>Nessa etapa nós temos que começar a organizar tudo que precisamos para oficialmente começar a
-                        trabalhar com a ferramenta, selecione uma pasta / repositório ao seu critério para ser o 'root'
-                        do projeto.</p>
-
-                    <img class="mx-auto w-75 d-block" src="../../images/pages/react/1 - instalacaoAmbiente/1.png"
-                        alt="etapa 1">
-                    <p>Nesse trabalho, utilizarei a versão Expo , do qual é um framework montado em cima do React Native,
-                        ele tem várias ferramentas adicionais e acréscimos que simplificam drásticamente o ciclo de vida
-                        de um app, além de atualmente ser recomendado pela própria equipe do React Native. Então com o
-                        terminal aberto, iremos inserir o comando para puxar a base para tudo. </p>
-                </div>
+      <div id="desktop" class="d-flex flex-column h-100 gap-2 p-3">
+        <div class="content d-flex flex-column h-100 w-100">
+          <div
+            class="contentHeader p-3 d-flex align-items-center justify-content-between"
+          >
+            <h3 class="m-0">REACT NATIVE</h3>
+            <div class="d-flex gap-2">
+              <a href="reactHub.html">
+                <button
+                  type="button"
+                  class="btn-close windows-button d-flex justify-content-center align-items-center"
+                >
+                  <-
+                </button>
+              </a>
+              <a href="../../index.html">
+                <button
+                  type="button"
+                  class="btn-close windows-button d-flex justify-content-center align-items-center"
+                >
+                  X
+                </button>
+              </a>
             </div>
+          </div>
+
+          <div class="contentArticle p-3">
+            <img
+              class="mx-auto w-50 d-block"
+              src="../../images/gifs/reactNative.gif"
+              alt="react gif"
+            />
+            <h1>LINKS ÚTEIS (PARA AGILIZAR PROCESSOS)</h1>
+            <ul>
+              <li>
+                <a target="_blank" href="https://reactnative.dev/">
+                  REACT NATIVE
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://expo.dev/"> EXPO DEV </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/nvm-sh/nvm">
+                  NVM
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://nodejs.org/en"> Node Js </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://expo.dev/go"> Expo Go </a>
+              </li>
+            </ul>
+            <h1>REACT NATIVE</h1>
+            <p>
+              O React Native em sua grande maioria é bem semelhante ao React
+              padrão, porém ele tem seu foco justamente na versatilidade de
+              poder desenvolver aplicativos tanto para Ios tanto para Android de
+              forma fácil e eficaz.
+            </p>
+            <p>
+              Existem diversos aplicativos do nosso dia a dia que inclusive
+              acabam utilizando dessa tecnologia como Instagram, Uber Eats e
+              Airbnb!
+            </p>
+            <p>
+              Para começarmos a trabalhar com essa tecnologia, separei esse
+              artigo em várias partes para que fique fácil o entendimento e até
+              mesmo a pratica do mesmo!
+            </p>
+            <h1>PRÉ REQUISITOS</h1>
+            <p>
+              Obviamente estamos falando de um framework, e precisamos de alguns
+              conhecimentos para que não fique perdido!
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Básico de HTML e CSS para a montagem e a estilização da página
+                  / app
+                </p>
+              </li>
+              <li>
+                <p>
+                  Crucial conhecimentos de Javascript, extremamente fundamental
+                  ter um conhecimento com essa lingaguem até para o entendimento
+                  da estruturação e utilização dos recursos do framework
+                </p>
+              </li>
+              <li>
+                <p>
+                  Ambiente de desenvolvimento, necessário ter um ambiente
+                  configurado, uma IDE de sua escolha (VSCODE, Atom ou Sublime)
+                  . PS: Minha preferência é o VSCODE. Node Js, essencial para
+                  rodarmos o Javascript fora do navegador e para o Npm , que
+                  será utilizado para gerenciamento de pacotes (instalar e
+                  gerenciar dependencias)
+                </p>
+              </li>
+            </ul>
+            <p>
+              Tendo todas as coisas listadas acima vamos para o começo de um
+              projeto!
+            </p>
+            <h1>INSTALAÇÃO DO AMBIENTE</h1>
+            <p>PS: 🫵 Instale todos os pré requisitos antes de seguir</p>
+            <p>
+              Nessa etapa nós temos que começar a organizar tudo que precisamos
+              para oficialmente começar a trabalhar com a ferramenta, selecione
+              uma pasta / repositório ao seu critério para ser o 'root' do
+              projeto.
+            </p>
+
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/1.png"
+              alt="etapa 1"
+            />
+            <p>
+              Nesse trabalho, utilizarei a versão Expo , do qual é um framework
+              montado em cima do React Native, ele tem várias ferramentas
+              adicionais e acréscimos que simplificam drásticamente o ciclo de
+              vida de um app, além de atualmente ser recomendado pela própria
+              equipe do React Native. Então com o terminal aberto, lembrando de
+              selecionar o tipo cmd, iremos inserir o comando para puxar a base
+              para tudo.
+            </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">npx create-expo-app --template</p>
+            </div>
+            <p>Quando executar deve aparecer algo semelhante a isso aqui:</p>
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/2.png"
+              alt="etapa 2"
+            />
+            <p>
+              Nesse exemplo iremos utilizar a versão default do Expo, selecione
+              com as setas do teclado a versão desejada.
+            </p>
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/3.png"
+              alt="etapa 3"
+            />
+            <p>
+              Após selecionar, o projeto irá pré-carregar (Tempo de tomar um
+              café ☕)
+            </p>
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/4.png"
+              alt="etapa 4"
+            />
+            <p>
+              No meio do carregamento é normal dar uns 'warnings' porém se
+              aparecer a mensagem de concluido está tudo correto! Após a
+              finalização do comando execute as etapas listadas pelo próprio
+              Expo!
+            </p>
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/5.png"
+              alt="etapa 5"
+            />
+            <p>
+              Neste primeiro teste, iremos rodar a versão web, rode o código
+              'npm run web' e ao esperar alguns segundos, finalmente a tela
+              padrão do template será carregada!
+            </p>
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/6.png"
+              alt="etapa 6"
+            />
+            <p>
+              Voltando ao VSCODE poderemos observar vários arquivos inseridos
+              dentro da pasta do projeto.
+            </p>
+            <img
+              class="mx-auto w-50 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/7.png"
+              alt="etapa 7"
+            />
+            <p>
+              Para limparmos o nosso ambiente e o deixando pronto para o
+              trabalho, rodaremos um código de limpeza do Expo (Para deletarmos
+              os arquivos de template do projeto)
+            </p>
+            <img
+              class="mx-auto w-75 d-block"
+              src="../../images/pages/react/1 - instalacaoAmbiente/8.png"
+              alt="etapa 8"
+            />
+            <p>E assim estamos prontos para programar!</p>
+
+            <h1>AMBIENTE MOBILE</h1>
+            <p>
+              Outras maneiras de trabalharmos com o React Native é em seu teste
+              para mobile. Dentro dessas simulações temos duas maneiras de fazer
+              isso:
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Através do aplicativo Expo Go, baixe em seu dispositivo móvel
+                  (IOS / ANDROID) e escaneie o QR CODE, lembrando que este
+                  método depende que ambos os dispositivos estejam conectados na
+                  mesma rede! Esse método é bastante rápido e conveniente para
+                  começar.
+                </p>
+                <p>Para iniciar digite no terminal:</p>
+                <div class="code p-3 rounded">
+                  <p class="m-0">npx expo</p>
+                </div>
+                <p>E logo em seguida escaneie o QR com o seu celular</p>
+              </li>
+              <li>
+                <p>
+                  E a segunda maneira é através de simuladores, para o windows
+                  temos o Android studio e para o IOS temos o XCode, ambos
+                  bastante eficazes! Esse método é um pouco mais complicado e
+                  lento, porém também é uma opção.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </main>
+  </body>
 
-
-</body>
-
-<script src="../../scripts/bootstrap.bundle.js"></script>
-
+  <script src="../../scripts/bootstrap.bundle.js"></script>
 </html>
