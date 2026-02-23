@@ -261,13 +261,64 @@
             <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/2.png" alt="">
             <p>Além de mais organizado, podemos reutilizar a mesma classe para diversos elementos, assim otimizando
               tempo e linhas de código!</p>
-            <p>Para testarmos mais recursos do React Expo, utilizaremos o elemento "Link" do qual no react router é
-              muito mais
-              otimizado que os links padrão.</p>
-            <p>Agora iremos colocar o elemento link para uma página "about us" e na primeira linha do código iremos
-              importar o componente com esse código :</p>
-            <div class="code p-3 rounded">
-              <p class="m-0">import { Link } from "expo-router";</p>
+              <!-- TABBAR PARA NAVEGAÇÃO -->
+            <div id="tabBar">
+              <h1>TAB BAR E NAVEGAÇÃO</h1>
+              <p>Para testarmos mais recursos do React Expo, utilizaremos o elemento "Link" do qual no react router é
+                muito mais
+                otimizado que os links padrão.</p>
+              <p>Agora iremos colocar o elemento link para uma página "about us" e na primeira linha do código iremos
+                importar o componente com esse código :</p>
+              <div class="code p-3 rounded">
+                <p class="m-0">import { Link } from "expo-router";</p>
+              </div>
+              <p>Criaremos a outra página "about us" com esse código base (Caso siga a recomendação do plugin ES7,
+                apenas
+                digite o atalho "rnfe" )</p>
+              <p>Após isso acrescente o href com a nova página que criamos, ficarão assim as páginas </p>
+
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/3.png" alt="">
+              <p class="text-center">INDEX</p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/4.png" alt="">
+              <p class="text-center">ABOUT US</p>
+
+              <p>A navegação funciona de forma eficaz graças ao stack presente no _layout, onde podemos utilizar a
+                navegação por pilhas, que inclusive dão esse efeito de navegação para esquerda e direita, cima e baixo
+              </p>
+              <p>Através dele podemos inclusive visualizar o nome das páginas (que no caso são pelo nome do arquivo),
+                mas
+                caso seja desejado você consegue desabilitar, acrescente o atributo ao stack : </p>
+              <div class="code p-3 rounded">
+                <p class="m-0">Stack screenOptions={ {headerShown: false }}</p>
+              </div>
+              <p>Mas caso sua ideia seja apenas de atualizar os nomes para outros, podemos fazer um método de indice,
+                desta maneira: </p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/5.png" alt="">
+              <p>
+                Neste exato momento seria de grande valia configurarmos um método de navegação mais eficiente e
+                visualmente mais organizado que seria a aba de navegação, é uma ferramenta de navegação bastante
+                utilizada
+                por dispositivos mobile, extremamente comum na posição inferior da tela, permitindo que o usuário possa
+                trocar de tela.
+              </p>
+              <p>Agora pensando em um exemplo mais consiso, apague o "about us" e seus links e crie logo em seguida uma
+                pasta na "app" chamada "(tabs)". Dentro dessa pasta arraste nosso "index" para dentro , crie um
+                "_layout.tsx" (Sim teremos dois arquivos de mesmo nome, não se preocupe está correto!) e outro chamado
+                "settings.tsx" e nesse arquivo já puxe código base (rnfe), renomeando o nome da const para
+                "SettingsScreen"</p>
+              <p>No nosso "_layout" principal, altere o "index" no name do "Stack.Screen" para "(tabs)" (Confie em mim!
+                Ficará excelente). Agora no outro "_layout" , código base (rnfe) e renomeie a const para "TabsLayout" e
+                colocaremos apenas o componente de "Tabs" afinal, iremos querer usar esse recurso do Expo Router</p>
+              <p>Com isso iremos não somente configurar os botões mas também seus ícones , que virão da Expo , o código
+                de
+                forma resumida ficará assim: </p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/6.png" alt="">
+              <p>Como pode ver eu adicionei inclusive bastante estética (meramente educativa, até por conta das cores
+                estarem aleatórias) onde não só podemos configurar os icones de forma dinamica mas também de forma
+                livre!
+                Até mesmo no "tabBar" coloquei várias opções que possa utilizar dependendo de sua necessidade!"</p>
+
+              <!-- 15:39 -->
             </div>
           </div>
         </div>
