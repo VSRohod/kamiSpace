@@ -368,11 +368,24 @@
               </p>
             </div>
             <p>E dentro da "TabsLayout" colocaremos : </p>
-             <div class="code p-3 rounded">
-                <p class="m-0">
-                  const {colors} = useTheme();
-                </p>
-              </div>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                const {colors} = useTheme();
+              </p>
+            </div>
+            <p>Depois disso atualize as cores de acordo com o que temos já configurado! (exemplo: backgroundColor :
+              colors.surface)</p>
+            <p>Feito isso temos nossas cores configuradas, agora é necessário configurarmos um botão que possa fazer
+              essa alternância entre temas, e para isso iremos inserir um lá no index, importe com : </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import useTheme from "@/hooks/useTheme";
+              </p>
+            </div>
+            <p>E insira ele na view com a constante que vai pegar nossa função e crie o botão clicável para trocar de
+              tema exatamente com a imagem abaixo </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/5.png" alt="">
+            <p>E pronto temos nosso tema alternando de forma dinâmica!</p>
           </div>
         </div>
       </div>
