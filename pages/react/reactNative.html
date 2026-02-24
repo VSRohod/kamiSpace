@@ -261,7 +261,7 @@
             <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/2.png" alt="">
             <p>Além de mais organizado, podemos reutilizar a mesma classe para diversos elementos, assim otimizando
               tempo e linhas de código!</p>
-              <!-- TABBAR PARA NAVEGAÇÃO -->
+            <!-- TABBAR PARA NAVEGAÇÃO -->
             <div id="tabBar">
               <h1>TAB BAR E NAVEGAÇÃO</h1>
               <p>Para testarmos mais recursos do React Expo, utilizaremos o elemento "Link" do qual no react router é
@@ -317,9 +317,62 @@
                 estarem aleatórias) onde não só podemos configurar os icones de forma dinamica mas também de forma
                 livre!
                 Até mesmo no "tabBar" coloquei várias opções que possa utilizar dependendo de sua necessidade!"</p>
-
-              <!-- 15:39 -->
+              <p>Para sumir com o cabeçalho, desative no _layout como fizemos antes e no que estamos trabalhando com o
+                menu inferior, insira como estilização nas tabs :</p>
+              <div class="code p-3 rounded">
+                <p class="m-0">
+                  headerShown: false
+                </p>
+              </div>
             </div>
+            <!-- TEMAS -->
+            <div id="temas">
+              <h1>TEMAS CLARO / ESCURO</h1>
+              <p>Para começarmos, criaremos uma pasta chamada "hooks" e dentro dela crie um arquivo chamado
+                "useTheme.tsx" e nele, projeto base (rnfe), a partir desse momento montaremos o estilo de cores, para
+                agilizar, deixei o código para colar no projeto :</p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/1.png" alt="">
+              <p>Após isso iremos colocar esse código acima da const "useTheme" do qual organizaremos os dados e também
+                faremos o famoso null check, por padrão deixaremos undefined e caso venha um erro, isso estará mais
+                preparado para lidar. </p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/2.png" alt="">
+              <p> Agora teremos que guardar as informações do tema, e para isso de forma convencional utilizariamos
+                local storage, mas faremos de forma mais segura, iremos utilizar o armazenamento assincrono! A primeira
+                etapa é baixar-lo pelo NPM com esse código: </p>
+              <div class="code p-3 rounded">
+                <p class="m-0">
+                  npm i @react-native-async-storage/async-storage
+                </p>
+              </div>
+              <p>O AsyncStorage é a API simples do React Native, baseada em Promises, para persistir pequenos fragmentos
+                de dados no dispositivo do usuário. Pense nele como o equivalente das aplicações móveis ao localStorage
+                dos navegadores, porém assíncrono e multiplataforma.</p>
+            </div>
+            <p>Agora precisamos de um ThemeProvider, como é um recurso programável eu irei anexar o script para que
+              insira diretamente após o "ThemeContext": </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/3.png" alt="">
+            <p>Explicando o que aconteceu, teremos uma função do qual receberá um elemento filho (é passado o tipo
+              apenas para o Typescript passar!), temos uma const logo em seguida que faz o controle da escolha do tema,
+              do qual ele poderá alternar e depois poderá armazenar.
+            </p>
+            <p>Agora é só adicionar todo sistema ao componente, apenas acrescentando um tratamento de erro caso o tema
+              não esteja / não funcione pelo Theme Provider, dessa maneira: </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/4.png" alt="">
+            <p>Temos nosso sistema agora é só implementar! Vamos primeiramente ao nosso "_layout" onde criamos a barra
+              de navegação inferior e utilizaremos as cores do tema que montamos no arquivo anterior importando ele na
+              primeira linha dessa maneira :
+            </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import useTheme from '@/hooks/useTheme'
+              </p>
+            </div>
+            <p>E dentro da "TabsLayout" colocaremos : </p>
+             <div class="code p-3 rounded">
+                <p class="m-0">
+                  const {colors} = useTheme();
+                </p>
+              </div>
           </div>
         </div>
       </div>
