@@ -347,49 +347,69 @@
               <p>O AsyncStorage é a API simples do React Native, baseada em Promises, para persistir pequenos fragmentos
                 de dados no dispositivo do usuário. Pense nele como o equivalente das aplicações móveis ao localStorage
                 dos navegadores, porém assíncrono e multiplataforma.</p>
+              <p>Agora precisamos de um ThemeProvider, como é um recurso programável eu irei anexar o script para que
+                insira diretamente após o "ThemeContext": </p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/3.png" alt="">
+              <p>Explicando o que aconteceu, teremos uma função do qual receberá um elemento filho (é passado o tipo
+                apenas para o Typescript passar!), temos uma const logo em seguida que faz o controle da escolha do
+                tema,
+                do qual ele poderá alternar e depois poderá armazenar.
+              </p>
+              <p>Agora é só adicionar todo sistema ao componente, apenas acrescentando um tratamento de erro caso o tema
+                não esteja / não funcione pelo Theme Provider, dessa maneira: </p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/4.png" alt="">
+              <p>Temos nosso sistema agora é só implementar! Vamos primeiramente ao nosso "_layout" onde criamos a barra
+                de navegação inferior e utilizaremos as cores do tema que montamos no arquivo anterior importando ele na
+                primeira linha dessa maneira :
+              </p>
+              <div class="code p-3 rounded">
+                <p class="m-0">
+                  import useTheme from '@/hooks/useTheme'
+                </p>
+              </div>
+              <p>E dentro da "TabsLayout" colocaremos : </p>
+              <div class="code p-3 rounded">
+                <p class="m-0">
+                  const {colors} = useTheme();
+                </p>
+              </div>
+              <p>Depois disso atualize as cores de acordo com o que temos já configurado! (exemplo: backgroundColor :
+                colors.surface)</p>
+              <p>Feito isso temos nossas cores configuradas, agora é necessário configurarmos um botão que possa fazer
+                essa alternância entre temas, e para isso iremos inserir um lá no index, importe com : </p>
+              <div class="code p-3 rounded">
+                <p class="m-0">
+                  import useTheme from "@/hooks/useTheme";
+                </p>
+              </div>
+              <p>E insira ele na view com a constante que vai pegar nossa função e crie o botão clicável para trocar de
+                tema exatamente com a imagem abaixo </p>
+              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/5.png" alt="">
+              <p>E pronto temos nosso tema alternando de forma dinâmica!</p>
             </div>
-            <p>Agora precisamos de um ThemeProvider, como é um recurso programável eu irei anexar o script para que
-              insira diretamente após o "ThemeContext": </p>
-            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/3.png" alt="">
-            <p>Explicando o que aconteceu, teremos uma função do qual receberá um elemento filho (é passado o tipo
-              apenas para o Typescript passar!), temos uma const logo em seguida que faz o controle da escolha do tema,
-              do qual ele poderá alternar e depois poderá armazenar.
-            </p>
-            <p>Agora é só adicionar todo sistema ao componente, apenas acrescentando um tratamento de erro caso o tema
-              não esteja / não funcione pelo Theme Provider, dessa maneira: </p>
-            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/4.png" alt="">
-            <p>Temos nosso sistema agora é só implementar! Vamos primeiramente ao nosso "_layout" onde criamos a barra
-              de navegação inferior e utilizaremos as cores do tema que montamos no arquivo anterior importando ele na
-              primeira linha dessa maneira :
-            </p>
+            <div id="backend">
+              <h1> backend </h1>
+              <p> para esse projeto irei utilizar uma solução backend mais facil que seria o convex, do qual não apenas
+                serve como back, mas tambem para autenticacao banco de dados etc. alem de ser uma opcao gratuita. faca
+                sua conta e assim iremos prosseguir</p>
+            </div>
+            <p>apos a criacao da conta , va ao terminal e insira o codigo abaixo: </p>
             <div class="code p-3 rounded">
               <p class="m-0">
-                import useTheme from '@/hooks/useTheme'
+                npm i convex
               </p>
             </div>
-            <p>E dentro da "TabsLayout" colocaremos : </p>
+            <p> e agora para rodar a fase de login, rode : </p>
             <div class="code p-3 rounded">
               <p class="m-0">
-                const {colors} = useTheme();
+                npm convex dev
               </p>
             </div>
-            <p>Depois disso atualize as cores de acordo com o que temos já configurado! (exemplo: backgroundColor :
-              colors.surface)</p>
-            <p>Feito isso temos nossas cores configuradas, agora é necessário configurarmos um botão que possa fazer
-              essa alternância entre temas, e para isso iremos inserir um lá no index, importe com : </p>
-            <div class="code p-3 rounded">
-              <p class="m-0">
-                import useTheme from "@/hooks/useTheme";
-              </p>
-            </div>
-            <p>E insira ele na view com a constante que vai pegar nossa função e crie o botão clicável para trocar de
-              tema exatamente com a imagem abaixo </p>
-            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/5.png" alt="">
-            <p>E pronto temos nosso tema alternando de forma dinâmica!</p>
+            <p>coloque para iniciar um novo projeto, insira o nome e selecione cloud deployment. e com isso podemos ver
+              que ira aparecer uma pastinha com tudo que e necessario, nao precisamos se preocupar com essa pasta por ser um ambiente ja configurado, e nisso la no site do convex deve ter aparecido o projeto, claro, sem dados ou nenhuma tabela                                                                                                                                                                       </p>
           </div>
         </div>
       </div>
-    </div>
   </main>
 </body>
 
