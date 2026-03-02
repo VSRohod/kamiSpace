@@ -27,6 +27,13 @@
   </header>
 
   <main id="monitorEffect" class="flex-grow-1">
+
+    <a href="#sumario">
+      <div class="topButton">
+        <img src="../../images/icons/boostrap/arrow-up-circle.svg" alt="">
+      </div>
+    </a>
+
     <div id="desktop" class="d-flex flex-column h-100 gap-2 p-3">
       <div class="content d-flex flex-column h-100 w-100">
         <div class="contentHeader p-3 d-flex align-items-center justify-content-between">
@@ -86,8 +93,46 @@
             artigo em várias partes para que fique fácil o entendimento e até
             mesmo a pratica do mesmo!
           </p>
+          <h1 id="sumario">SUMÁRIO</h1>
+          <ul>
+            <li>
+              <p>
+                <a href="#preRequisitos">PRÉ REQUISITOS</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#instalacaoAmbiente">INSTALAÇÃO DO AMBIENTE</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#ambienteMobile">AMBIENTAÇÃO DO AMBIENTE MOBILE</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#baseProjeto">BASE DO PROJETO</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#tabBar">TAB BAR PARA NAVEGAÇÃO</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#temas">TEMAS</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#backend">BACKEND</a>
+              </p>
+            </li>
+          </ul>
           <!-- PRÉ REQUISITOS DO CONTEÚDO -->
-          <div id="preRequisitos">
+          <div id="preRequisitos" class="topic">
             <h1>PRÉ REQUISITOS</h1>
             <p>
               Obviamente estamos falando de um framework, e precisamos de
@@ -125,7 +170,7 @@
             </p>
           </div>
           <!-- INSTALAÇÃO DO AMBIENTE GERAL -->
-          <div id="instalacaoAmbiente">
+          <div id="instalacaoAmbiente" class="topic">
             <h1>INSTALAÇÃO DO AMBIENTE</h1>
             <p>PS: 🫵 Instale todos os pré requisitos antes de seguir</p>
             <p>RECOMENDAÇÕES DE PLUGINS DO VSCODE (Opcional)</p>
@@ -201,7 +246,7 @@
             <p>E assim estamos prontos para programar!</p>
           </div>
           <!-- AMBIENTAÇÃO DO AMBIENTE MOBILE -->
-          <div id="ambienteMobile">
+          <div id="ambienteMobile" class="topic">
             <h1>AMBIENTE MOBILE</h1>
             <p>
               Outras maneiras de trabalharmos com o React Native é em seu
@@ -234,7 +279,7 @@
             </ul>
           </div>
           <!-- BASE DO PROJETO -->
-          <div id="baseProjeto">
+          <div id="baseProjeto" class="topic">
             <h1>COMO A BASE FUNCIONA?</h1>
             <p>Básicamente temos várias pastas disponíveis por padrão no projeto, mas irei explicar cada uma delas!</p>
             <p>Temos a principal que se chama "app" que é a pasta onde as páginas do nosso projeto estarão, é
@@ -261,152 +306,169 @@
             <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/2.png" alt="">
             <p>Além de mais organizado, podemos reutilizar a mesma classe para diversos elementos, assim otimizando
               tempo e linhas de código!</p>
-            <!-- TABBAR PARA NAVEGAÇÃO -->
-            <div id="tabBar">
-              <h1>TAB BAR E NAVEGAÇÃO</h1>
-              <p>Para testarmos mais recursos do React Expo, utilizaremos o elemento "Link" do qual no react router é
-                muito mais
-                otimizado que os links padrão.</p>
-              <p>Agora iremos colocar o elemento link para uma página "about us" e na primeira linha do código iremos
-                importar o componente com esse código :</p>
-              <div class="code p-3 rounded">
-                <p class="m-0">import { Link } from "expo-router";</p>
-              </div>
-              <p>Criaremos a outra página "about us" com esse código base (Caso siga a recomendação do plugin ES7,
-                apenas
-                digite o atalho "rnfe" )</p>
-              <p>Após isso acrescente o href com a nova página que criamos, ficarão assim as páginas </p>
+          </div>
+          <!-- TABBAR PARA NAVEGAÇÃO -->
+          <div id="tabBar" class="topic">
+            <h1>TAB BAR E NAVEGAÇÃO</h1>
+            <p>Para testarmos mais recursos do React Expo, utilizaremos o elemento "Link" do qual no react router é
+              muito mais
+              otimizado que os links padrão.</p>
+            <p>Agora iremos colocar o elemento link para uma página "about us" e na primeira linha do código iremos
+              importar o componente com esse código :</p>
+            <div class="code p-3 rounded">
+              <p class="m-0">import { Link } from "expo-router";</p>
+            </div>
+            <p>Criaremos a outra página "about us" com esse código base (Caso siga a recomendação do plugin ES7,
+              apenas
+              digite o atalho "rnfe" )</p>
+            <p>Após isso acrescente o href com a nova página que criamos, ficarão assim as páginas </p>
 
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/3.png" alt="">
-              <p class="text-center">INDEX</p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/4.png" alt="">
-              <p class="text-center">ABOUT US</p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/3.png" alt="">
+            <p class="text-center">INDEX</p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/4.png" alt="">
+            <p class="text-center">ABOUT US</p>
 
-              <p>A navegação funciona de forma eficaz graças ao stack presente no _layout, onde podemos utilizar a
-                navegação por pilhas, que inclusive dão esse efeito de navegação para esquerda e direita, cima e baixo
-              </p>
-              <p>Através dele podemos inclusive visualizar o nome das páginas (que no caso são pelo nome do arquivo),
-                mas
-                caso seja desejado você consegue desabilitar, acrescente o atributo ao stack : </p>
-              <div class="code p-3 rounded">
-                <p class="m-0">Stack screenOptions={ {headerShown: false }}</p>
-              </div>
-              <p>Mas caso sua ideia seja apenas de atualizar os nomes para outros, podemos fazer um método de indice,
-                desta maneira: </p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/5.png" alt="">
-              <p>
-                Neste exato momento seria de grande valia configurarmos um método de navegação mais eficiente e
-                visualmente mais organizado que seria a aba de navegação, é uma ferramenta de navegação bastante
-                utilizada
-                por dispositivos mobile, extremamente comum na posição inferior da tela, permitindo que o usuário possa
-                trocar de tela.
-              </p>
-              <p>Agora pensando em um exemplo mais consiso, apague o "about us" e seus links e crie logo em seguida uma
-                pasta na "app" chamada "(tabs)". Dentro dessa pasta arraste nosso "index" para dentro , crie um
-                "_layout.tsx" (Sim teremos dois arquivos de mesmo nome, não se preocupe está correto!) e outro chamado
-                "settings.tsx" e nesse arquivo já puxe código base (rnfe), renomeando o nome da const para
-                "SettingsScreen"</p>
-              <p>No nosso "_layout" principal, altere o "index" no name do "Stack.Screen" para "(tabs)" (Confie em mim!
-                Ficará excelente). Agora no outro "_layout" , código base (rnfe) e renomeie a const para "TabsLayout" e
-                colocaremos apenas o componente de "Tabs" afinal, iremos querer usar esse recurso do Expo Router</p>
-              <p>Com isso iremos não somente configurar os botões mas também seus ícones , que virão da Expo , o código
-                de
-                forma resumida ficará assim: </p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/6.png" alt="">
-              <p>Como pode ver eu adicionei inclusive bastante estética (meramente educativa, até por conta das cores
-                estarem aleatórias) onde não só podemos configurar os icones de forma dinamica mas também de forma
-                livre!
-                Até mesmo no "tabBar" coloquei várias opções que possa utilizar dependendo de sua necessidade!"</p>
-              <p>Para sumir com o cabeçalho, desative no _layout como fizemos antes e no que estamos trabalhando com o
-                menu inferior, insira como estilização nas tabs :</p>
-              <div class="code p-3 rounded">
-                <p class="m-0">
-                  headerShown: false
-                </p>
-              </div>
+            <p>A navegação funciona de forma eficaz graças ao stack presente no _layout, onde podemos utilizar a
+              navegação por pilhas, que inclusive dão esse efeito de navegação para esquerda e direita, cima e baixo
+            </p>
+            <p>Através dele podemos inclusive visualizar o nome das páginas (que no caso são pelo nome do arquivo),
+              mas
+              caso seja desejado você consegue desabilitar, acrescente o atributo ao stack : </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">Stack screenOptions={ {headerShown: false }}</p>
             </div>
-            <!-- TEMAS -->
-            <div id="temas">
-              <h1>TEMAS CLARO / ESCURO</h1>
-              <p>Para começarmos, criaremos uma pasta chamada "hooks" e dentro dela crie um arquivo chamado
-                "useTheme.tsx" e nele, projeto base (rnfe), a partir desse momento montaremos o estilo de cores, para
-                agilizar, deixei o código para colar no projeto :</p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/1.png" alt="">
-              <p>Após isso iremos colocar esse código acima da const "useTheme" do qual organizaremos os dados e também
-                faremos o famoso null check, por padrão deixaremos undefined e caso venha um erro, isso estará mais
-                preparado para lidar. </p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/2.png" alt="">
-              <p> Agora teremos que guardar as informações do tema, e para isso de forma convencional utilizariamos
-                local storage, mas faremos de forma mais segura, iremos utilizar o armazenamento assincrono! A primeira
-                etapa é baixar-lo pelo NPM com esse código: </p>
-              <div class="code p-3 rounded">
-                <p class="m-0">
-                  npm i @react-native-async-storage/async-storage
-                </p>
-              </div>
-              <p>O AsyncStorage é a API simples do React Native, baseada em Promises, para persistir pequenos fragmentos
-                de dados no dispositivo do usuário. Pense nele como o equivalente das aplicações móveis ao localStorage
-                dos navegadores, porém assíncrono e multiplataforma.</p>
-              <p>Agora precisamos de um ThemeProvider, como é um recurso programável eu irei anexar o script para que
-                insira diretamente após o "ThemeContext": </p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/3.png" alt="">
-              <p>Explicando o que aconteceu, teremos uma função do qual receberá um elemento filho (é passado o tipo
-                apenas para o Typescript passar!), temos uma const logo em seguida que faz o controle da escolha do
-                tema,
-                do qual ele poderá alternar e depois poderá armazenar.
+            <p>Mas caso sua ideia seja apenas de atualizar os nomes para outros, podemos fazer um método de indice,
+              desta maneira: </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/5.png" alt="">
+            <p>
+              Neste exato momento seria de grande valia configurarmos um método de navegação mais eficiente e
+              visualmente mais organizado que seria a aba de navegação, é uma ferramenta de navegação bastante
+              utilizada
+              por dispositivos mobile, extremamente comum na posição inferior da tela, permitindo que o usuário possa
+              trocar de tela.
+            </p>
+            <p>Agora pensando em um exemplo mais consiso, apague o "about us" e seus links e crie logo em seguida uma
+              pasta na "app" chamada "(tabs)". Dentro dessa pasta arraste nosso "index" para dentro , crie um
+              "_layout.tsx" (Sim teremos dois arquivos de mesmo nome, não se preocupe está correto!) e outro chamado
+              "settings.tsx" e nesse arquivo já puxe código base (rnfe), renomeando o nome da const para
+              "SettingsScreen"</p>
+            <p>No nosso "_layout" principal, altere o "index" no name do "Stack.Screen" para "(tabs)" (Confie em mim!
+              Ficará excelente). Agora no outro "_layout" , código base (rnfe) e renomeie a const para "TabsLayout" e
+              colocaremos apenas o componente de "Tabs" afinal, iremos querer usar esse recurso do Expo Router</p>
+            <p>Com isso iremos não somente configurar os botões mas também seus ícones , que virão da Expo , o código
+              de
+              forma resumida ficará assim: </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/2 - baseProjeto/6.png" alt="">
+            <p>Como pode ver eu adicionei inclusive bastante estética (meramente educativa, até por conta das cores
+              estarem aleatórias) onde não só podemos configurar os icones de forma dinamica mas também de forma
+              livre!
+              Até mesmo no "tabBar" coloquei várias opções que possa utilizar dependendo de sua necessidade!"</p>
+            <p>Para sumir com o cabeçalho, desative no _layout como fizemos antes e no que estamos trabalhando com o
+              menu inferior, insira como estilização nas tabs :</p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                headerShown: false
               </p>
-              <p>Agora é só adicionar todo sistema ao componente, apenas acrescentando um tratamento de erro caso o tema
-                não esteja / não funcione pelo Theme Provider, dessa maneira: </p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/4.png" alt="">
-              <p>Temos nosso sistema agora é só implementar! Vamos primeiramente ao nosso "_layout" onde criamos a barra
-                de navegação inferior e utilizaremos as cores do tema que montamos no arquivo anterior importando ele na
-                primeira linha dessa maneira :
+            </div>
+          </div>
+          <!-- TEMAS -->
+          <div id="temas" class="topic">
+            <h1>TEMAS CLARO / ESCURO</h1>
+            <p>Para começarmos, criaremos uma pasta chamada "hooks" e dentro dela crie um arquivo chamado
+              "useTheme.tsx" e nele, projeto base (rnfe), a partir desse momento montaremos o estilo de cores, para
+              agilizar, deixei o código para colar no projeto :</p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/1.png" alt="">
+            <p>Após isso iremos colocar esse código acima da const "useTheme" do qual organizaremos os dados e também
+              faremos o famoso null check, por padrão deixaremos undefined e caso venha um erro, isso estará mais
+              preparado para lidar. </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/2.png" alt="">
+            <p> Agora teremos que guardar as informações do tema, e para isso de forma convencional utilizariamos
+              local storage, mas faremos de forma mais segura, iremos utilizar o armazenamento assincrono! A primeira
+              etapa é baixar-lo pelo NPM com esse código: </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                npm i @react-native-async-storage/async-storage
               </p>
-              <div class="code p-3 rounded">
-                <p class="m-0">
-                  import useTheme from '@/hooks/useTheme'
-                </p>
-              </div>
-              <p>E dentro da "TabsLayout" colocaremos : </p>
-              <div class="code p-3 rounded">
-                <p class="m-0">
-                  const {colors} = useTheme();
-                </p>
-              </div>
-              <p>Depois disso atualize as cores de acordo com o que temos já configurado! (exemplo: backgroundColor :
-                colors.surface)</p>
-              <p>Feito isso temos nossas cores configuradas, agora é necessário configurarmos um botão que possa fazer
-                essa alternância entre temas, e para isso iremos inserir um lá no index, importe com : </p>
-              <div class="code p-3 rounded">
-                <p class="m-0">
-                  import useTheme from "@/hooks/useTheme";
-                </p>
-              </div>
-              <p>E insira ele na view com a constante que vai pegar nossa função e crie o botão clicável para trocar de
-                tema exatamente com a imagem abaixo </p>
-              <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/5.png" alt="">
-              <p>E pronto temos nosso tema alternando de forma dinâmica!</p>
             </div>
-            <div id="backend">
-              <h1> backend </h1>
-              <p> para esse projeto irei utilizar uma solução backend mais facil que seria o convex, do qual não apenas
-                serve como back, mas tambem para autenticacao banco de dados etc. alem de ser uma opcao gratuita. faca
-                sua conta e assim iremos prosseguir</p>
+            <p>O AsyncStorage é a API simples do React Native, baseada em Promises, para persistir pequenos fragmentos
+              de dados no dispositivo do usuário. Pense nele como o equivalente das aplicações móveis ao localStorage
+              dos navegadores, porém assíncrono e multiplataforma.</p>
+            <p>Agora precisamos de um ThemeProvider, como é um recurso programável eu irei anexar o script para que
+              insira diretamente após o "ThemeContext": </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/3.png" alt="">
+            <p>Explicando o que aconteceu, teremos uma função do qual receberá um elemento filho (é passado o tipo
+              apenas para o Typescript passar!), temos uma const logo em seguida que faz o controle da escolha do
+              tema,
+              do qual ele poderá alternar e depois poderá armazenar.
+            </p>
+            <p>Agora é só adicionar todo sistema ao componente, apenas acrescentando um tratamento de erro caso o tema
+              não esteja / não funcione pelo Theme Provider, dessa maneira: </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/4.png" alt="">
+            <p>Temos nosso sistema agora é só implementar! Vamos primeiramente ao nosso "_layout" onde criamos a barra
+              de navegação inferior e utilizaremos as cores do tema que montamos no arquivo anterior importando ele na
+              primeira linha dessa maneira :
+            </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import useTheme from '@/hooks/useTheme'
+              </p>
             </div>
-            <p>apos a criacao da conta , va ao terminal e insira o codigo abaixo: </p>
+            <p>E dentro da "TabsLayout" colocaremos : </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                const {colors} = useTheme();
+              </p>
+            </div>
+            <p>Depois disso atualize as cores de acordo com o que temos já configurado! (exemplo: backgroundColor :
+              colors.surface)</p>
+            <p>Feito isso temos nossas cores configuradas, agora é necessário configurarmos um botão que possa fazer
+              essa alternância entre temas, e para isso iremos inserir um lá no index, importe com : </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import useTheme from "@/hooks/useTheme";
+              </p>
+            </div>
+            <p>E insira ele na view com a constante que vai pegar nossa função e crie o botão clicável para trocar de
+              tema exatamente com a imagem abaixo </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/5.png" alt="">
+            <p>Não se esqueça de adicionar o Theme Provider no _layout encapsulando todo mundo! No final teremos: </p>
+
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/6.png" alt="">
+            <p class="text-center">USE THEME</p>
+
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/7.png" alt="">
+            <p class="text-center">_LAYOUT</p>
+
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/8.png" alt="">
+            <p class="text-center">INDEX</p>
+
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/3 - tema/9.png" alt="">
+            <p class="text-center">(TABS)_LAYOUT</p>
+            <p>E pronto temos nosso tema alternando de forma dinâmica!</p>
+          </div>
+          <!-- BACKEND -->
+          <div id="backend" class="topic">
+            <h1> BACKEND </h1>
+            <p> Para esse projeto irei utilizar uma solução backend mais fácil que seria o convex, do qual não apenas
+              serve como back, mas também para autenticação do banco de dados etc. alem de ser uma opção gratuita. Faça
+              sua conta e assim iremos prosseguir.</p>
+
+            <p>Após a criação da conta , vá ao terminal e insira o código abaixo: </p>
             <div class="code p-3 rounded">
               <p class="m-0">
                 npm i convex
               </p>
             </div>
-            <p> e agora para rodar a fase de login, rode : </p>
+            <p> E agora para rodar a fase de login, rode : </p>
             <div class="code p-3 rounded">
               <p class="m-0">
                 npm convex dev
               </p>
             </div>
-            <p>coloque para iniciar um novo projeto, insira o nome e selecione cloud deployment. e com isso podemos ver
-              que ira aparecer uma pastinha com tudo que e necessario, nao precisamos se preocupar com essa pasta por ser um ambiente ja configurado, e nisso la no site do convex deve ter aparecido o projeto, claro, sem dados ou nenhuma tabela                                                                                                                                                                       </p>
+            <p> Coloque para iniciar um novo projeto, insira o nome e selecione cloud deployment. E com isso podemos ver
+              que irá aparecer uma pastinha com tudo que é necessário, não precisamos se preocupar com essa pasta por
+              ser um ambiente já configurado, e nisso lá no site do convex deve ter aparecido o projeto, claro, sem
+              dados ou nenhuma tabela </p>
           </div>
         </div>
       </div>
