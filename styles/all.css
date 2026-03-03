@@ -185,5 +185,6 @@ p {
 
 .imagesPopUp .modal-dialog{
     background-color: transparent;
+    border: none;
 }
 
