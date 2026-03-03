@@ -183,11 +183,7 @@ p {
     height: 100%;
 }
 
-
-.imagesPopUp{
-    height: auto!important;
-}
-
 .imagesPopUp .modal-dialog{
-    max-width: 90%;
+    background-color: transparent;
 }
+
