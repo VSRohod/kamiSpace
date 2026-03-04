@@ -509,9 +509,46 @@
             <img class="mx-auto w-50 d-block" src="../../images/pages/react/reactNative/4 - backend/4.png" alt="">
           </div>
           <!-- ESTILIZAÇÃO E HEADER -->
-          <div id="estiloHeader">
+          <div id="estiloHeader" class="topic">
             <h1>ESTILIZAÇÃO E HEADER</h1>
-
+            <p>Para começarmos a realmente estilizar o projeto , precisamos utilizar aquele sistema de temas que
+              desenvolvemos no passado então vamos por partes.</p>
+            <p>Primeiro devemos importar lá no index "colors" juntamente com "toggleDarkMode" para importarmos isso do
+              componente, porém se observa que devemos repensar como colocaremos essas cores para que elas sejam
+              dinamicas, logo devemos re-estruturar o código para aceitar a importação das cores, refazendo o código
+              ficaria algo semelhante a isso :</p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/reactNative/5 - estilizacao/1.png" alt="">
+            <p>E logo depois iremos importar toda a estilização para a função Index logo após a linha do useTheme() :
+            </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                const styles = createStyles(colors);
+              </p>
+            </div>
+            <p>Feito isso temos como utilizar as cores fora do useTheme! Porém podemos fazer o código ser mais elegante,
+              utilizando uma organização onde códigos de css ficam separados do conteúdo, para isso vamos lá em "assets"
+              e vamos inserir uma pasta chamada "styles" e logo em seguida um arquivo chamado "home.styles.ts" (Para
+              agilizar vou deixar um código base ) : </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/reactNative/5 - estilizacao/2.png" alt="">
+            <p>Segue o mesmo para a outra página "settings" no meu caso:</p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/reactNative/5 - estilizacao/3.png" alt="">
+            <p>Agora sim temos uma organização muito mais adequada, iremos remover o const "createStyles" do index ,
+              para colocarmos o código oficial (Esse carinha foi apenas para testarmos)</p>
+            <p>Dentro daquela função do "Index()" atualize aquele código que inserimos recentemente para algo assim,
+              para podermos usarmos a estilização que inserimos no projeto :</p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                const homeStyles = createHomeStyles(colors);
+              </p>
+            </div>
+            <p>Obs: Lembre de importar o createHomeStyles! Caso não faça automático, eis o código para isso :</p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import { createHomeStyles } from "@/assets/styles/home.styles";
+              </p>
+            </div>
+            <p>Para evitar que quebre um pouco a visualização , podemos agora mudar a "view" para "SafeAreaView" passando o style "homeStyles.container"</p>
+            <p>8 minutos</p>
           </div>
         </div>
       </div>
