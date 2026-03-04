@@ -188,15 +188,3 @@ p {
     border: none;
 }
 
-.alert{
-    width: 200px;
-    position: absolute;
-    right: 0px;
-    background-color: var(--backgroundWhite);
-    border-radius: 50px 0px 0px 50px;
-    text-align: center;
-}
-
-.alert img{
-    width: 100%;
-}
