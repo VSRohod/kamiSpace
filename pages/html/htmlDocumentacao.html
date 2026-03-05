@@ -70,9 +70,14 @@
                     </p>
                     <h1 id="sumario">SUMÁRIO</h1>
                     <ul>
-                         <li>
+                        <li>
                             <p>
                                 <a href="#preRequisitos">PRÉ REQUISITOS</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#introdutorio">INTRODUTÓRIO</a>
                             </p>
                         </li>
                         <li>
@@ -107,14 +112,79 @@
                             Tendo todas as coisas listadas acima vamos começando aos poucos!
                         </p>
                     </div>
+                    <!-- INTRODUTORIO HTML -->
+                    <div id="introdutorio" class="topic">
+                        <h1>INTRODUTÓRIO</h1>
+                        <p>
+                            Antes de começarmos qualquer coisa, é importante sabermos de algumas informações! Como vocês
+                            já devem ter lido lá na página de história, todas as informações de um site são organizadas
+                            em tags, e como funciona isso? Bom vamos lá.
+                        </p>
+                        <p>Para entendermos de fato precisamos saber a diferença de certos elementos: </p>
+                        <ul>
+                            <li>
+                                <p>Conteúdo, é o que vem entre as tags, geralmente é o conteúdo que vai ser abraçado
+                                    pelas tags</p>
+                                <p>Elemento, é o conjunto do conteúdo com as tags, a informação já encapsulada e
+                                    identificada</p>
+                                <p>Tag, traduzindo do inglês, "etiqueta", sã códigos que definem a estrutura da página,
+                                    como textos, imagens e etc. Assim ajudando a reunir elementos com formatações
+                                    semelhantes. Se a tag necessita de conteúdo, ela deverá ter abertura e fechamento,
+                                    caso contrário ela se fecha na própria abertura ( como a tag do input ).</p>
+                                <p>Atributos de tag, seriam justamente palavras especiais colocadas dentro da abertura
+                                    da tag, onde podemos controlar o comportamento da do elemento ou modificar-lo, com
+                                    classes, id's , estilizações ou até mesmo pequenas ações.</p>
+                            </li>
+                        </ul>
+                        <img class="mx-auto w-75 d-block" src="../../images/pages/html/html documentacao/1.png"
+                            alt="html Image">
+                    </div>
                     <!-- BASE HTML -->
                     <div id="base" class="topic">
                         <h1>BASE HTML</h1>
                         <p>
-                           Para iniciarmos o conteúdo é fundamental que primeiramente você abra a sua IDE e coloque o código base de html (No vscode basta um "!" e enter).
+                            Para iniciarmos o conteúdo é fundamental que primeiramente você abra a sua IDE e coloque o
+                            código base de html (No vscode basta um "!" e enter).
                         </p>
-                        <img class="mx-auto w-50 d-block" src="../../images/pages/html/html documentacao/1.png"
-                        alt="html Image">
+                        <img class="mx-auto w-50 d-block" src="../../images/pages/html/html documentacao/2.png"
+                            alt="html Image">
+                        <p>Dentro dessa base temos alguns códigos necessários para começarmos a editar um website, vamos
+                            para a descrição de alguns códigos: </p>
+                        <ul>
+                            <li>
+                                <p>!DOCTYPE html, esse é responsável para colocar nosso projeto no html versão 5, sem
+                                    isso o navegador pode ser que entre em modo compatibilidade e renderizar o site de
+                                    forma estranha.</p>
+                            </li>
+                            <li>
+                                <p>html lang="pt-br", essencial para colocar o container raiz e principalmente para
+                                    acessibilidade, para informarmos ao navegador qual linguagem está sendo trabalhada
+                                    nesse website.</p>
+                            </li>
+                            <li>
+                                <p>head, é onde ficam as informações técnicas (metadados), eles não são visíveis no
+                                    site.</p>
+                            </li>
+                            <li>
+                                <p>meta charset="UTF-8", define a codificação de caracteres, o UTF8 permite que usemos
+                                    acentos (á, õ , ç) sem se tornarem símbolos estranhos</p>
+                            </li>
+                            <li>
+                                <p>meta name="viewport" content="width=device-width, initial-scale=1.0, fundamental para
+                                    a responsividade no futuro, faz com que o site se ajuste a largura do celular,
+                                    impedindo que o texto fique pequeno.</p>
+                            </li>
+                            <li>
+                                <p>title, define o título do website</p>
+                            </li>
+                            <li>
+                                <p>body, define a área do documento onde terão elementos visíveis, como paragrafos ou
+                                    titulos</p>
+                            </li>
+                        </ul>
+                        <p>Quando rodamos todos esse códigos dentro do navegador, ele é o responsável por renderizar e organizar o visual, ficaria algo próximo a isso (conceitualmente falando):</p>
+                         <img class="mx-auto w-50 d-block" src="../../images/pages/html/html documentacao/3.png"
+                            alt="html Image">
                     </div>
                 </div>
             </div>
