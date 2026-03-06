@@ -547,7 +547,8 @@
                 import { createHomeStyles } from "@/assets/styles/home.styles";
               </p>
             </div>
-            <p>Para evitar que quebre um pouco a visualização , podemos agora mudar a "view" para "SafeAreaView" passando o style "homeStyles.container"</p>
+            <p>Para evitar que quebre um pouco a visualização , podemos agora mudar a "view" para "SafeAreaView"
+              passando o style "homeStyles.container"</p>
             <p>No final teremos um resultado exatamente assim: </p>
             <img class="mx-auto w-50 d-block" src="../../images/pages/react/reactNative/5 - estilizacao/4.png" alt="">
             <p>Vamos instalar um gradiente linear para nosso app ficar mais legal! Vá no terminal e importe: </p>
@@ -556,6 +557,26 @@
                 npx expo install expo-linear-gradient
               </p>
             </div>
+            <p>Depois de todo o processo rolar faremos igualmente a muda de tema, e importaremos ao "index", insira
+              "LinearGradient colors={colors.gradients.background} style={homeStyles.container}" como elemento pai e
+              importe com esse código caso não ocorra automaticamente: </p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import { LinearGradient } from "expo-linear-gradient";
+              </p>
+            </div>
+            <p>Para ficar mais interessante! Iremos colocar a status bar para que o usuário veja os status do próprio
+              celular. Logo acima de "SafeAreaView" o código "StatusBar barStyle={colors.statusBarStyle}"</p>
+            <p>Bom, agora iremos montar o header, porém fazer isso diretamente no index iria sobrecarregar o arquivo,
+              então iremos abrir uma pasta no root do projeto chamada "components" e logo em seguida criar m arquivo
+              chamado "Header.tsx" ( Não esqueça de importar no index )</p>
+            <div class="code p-3 rounded">
+              <p class="m-0">
+                import Header from "@/components/Header";
+              </p>
+            </div>
+            <p>Atualmente o nosso "index" estará exatamente assim: </p>
+            <img class="mx-auto w-50 d-block" src="../../images/pages/react/reactNative/5 - estilizacao/5.png" alt="">
           </div>
         </div>
       </div>
