@@ -26,14 +26,14 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; 
     background-image: url(../images/wallpapers/win98.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden;
 }
-
 /* scrollbar */
 
 body *::-webkit-scrollbar {
