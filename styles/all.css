@@ -9,6 +9,7 @@
     --blue: rgb(62, 62, 160);
     --gradientMonitor: repeating-conic-gradient(rgb(155, 146, 207) 0%, rgba(146, 155, 207, 0) 25%, rgba(187, 174, 247, 0.267) 0%, rgba(179, 174, 247, 0.801) 50%) 50% center / 3px 3px;
     --backgroundWhite: rgb(243, 243, 243);
+    --white: #fff;
     --blue98: navy;
     --pinkFrost: #EA3465;
     --blueFrost: #628EEF;
@@ -199,5 +200,23 @@ p {
     border-top: 2px solid #ededed;
     border-right: 2px solid #404040;
     border-bottom: 2px solid #404040;
+}
+
+
+
+.topics {
+    cursor: pointer;
+    background-color: #c6c6c6;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-decoration: none;
+    color: #000
+}
+
+.topicsImg {
+    height: 8rem;
+    margin-top: 1rem;
 }
 

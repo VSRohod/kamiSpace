@@ -1,0 +1,16 @@
+:root{
+    --awsPrimary : #FF9900 ;
+    --awsBlue : #252F3E ;
+}
+
+main h1{
+    color: var(--awsPrimary);
+    background-color: var(--awsBlue);
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.content{
+    background-color: var(--white);
+    color: var(--awsBlue);
+}
