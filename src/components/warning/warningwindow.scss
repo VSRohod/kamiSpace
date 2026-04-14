@@ -1,0 +1,32 @@
+@media (max-width: 500px) {
+  .drag-warning {
+  }
+}
+.warning-window, .bin-warning-window, .recycle-warning-window {
+  .window-title {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .window {
+        display: flex;
+      }
+      .window-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .warning {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+        button {
+          width: 100px;
+          height: 35px;
+          align-self: center;
+        }
+      }
+}
+
+

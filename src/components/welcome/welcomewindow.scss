@@ -1,0 +1,102 @@
+.drag-welcome{
+    width: 600px;
+    .window-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .buttons {
+            display: flex;
+        }
+    }
+    .help-icon {
+        font-weight: bold;
+        font-size: larger;
+    }
+    .window {
+        display: flex;
+    }
+    .window-content {
+        padding: 20px;
+        display: flex;
+        gap: 1rem;
+    }
+    .login-info {
+        display:flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+    }
+    .username, .password {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    label {
+        width: 100px;
+    }
+    .login-buttons {
+        width: min-content;
+
+        button {
+            width: 100px;
+            height: 35px;
+        }
+    }
+    .login-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .helper {
+      color: red;
+      position: absolute;
+      top: -1.5rem;
+      right: 1.5rem;
+      z-index: 99;
+      background-color: lightgoldenrodyellow;
+      padding: 1.5rem;
+      display: none;
+      border-style: solid;
+      border-width: 0.5px;
+      border-left-color: lightgray;
+      border-top-color: #dfdfdf;
+      border-right-color: #0a0a0a;
+      border-bottom-color: #0a0a0a;
+      box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.35), inset 1px 1px 0px 1px #fefefe, inset -1px -1px 0 1px rgb(146, 146, 100);
+      .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 0.1rem;
+        cursor: pointer;
+      }
+    }
+    
+}
+
+@media (max-width: 600px) {
+  .drag-welcome{
+    width: 95vw;
+    .window-content {
+        flex-direction: column;
+    }
+    .login-buttons {
+        display: flex;
+        flex-direction: row;
+        width:max-content;
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+    .helper {
+      right: 0.5rem;
+    }
+  }   
+}
+
+
+

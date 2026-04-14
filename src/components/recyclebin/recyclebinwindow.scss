@@ -1,0 +1,110 @@
+@media (max-width: 500px) {
+  .drag-recycle-bin {
+
+  }
+}
+.recycle-bin-window{
+  .bin-icons {
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 15px;
+    padding: 15px;
+
+    .icon {
+      display: flex;
+      width: 90px;
+      flex-direction: column;
+      align-items: center;
+      width: max-content;
+      text-align: -webkit-center;
+      p {
+        text-align: center;
+        padding: 0 0.25rem;
+        z-index: 1;
+        user-select: none;
+    }
+    .icon > * {
+      cursor: pointer;
+    }
+  }
+  
+}
+  .window-title {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .toolbar {
+        button {
+          box-shadow: none;
+        }
+      }
+      .window {
+        display: flex;
+        
+      }
+   
+      .window-content {
+        display: flex;
+        padding: 0px;
+        background-color: white;
+        border: 1px solid gray;
+        flex-direction: column;
+        width: 330px;
+        height: 250px;
+        .warning {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+        button {
+          width: 100px;
+          height: 35px;
+          align-self: center;
+        }
+      }
+      .footer {
+        width: 99%;
+        margin: 0.5%;
+        padding: 0 0.5rem;
+        user-select: none;
+      }
+}
+
+
+.recycle-bin-content {
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  height: 85%;
+  width: 100%;
+
+  .bin-icons {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 1fr 1fr;
+
+    justify-items: center;
+    gap: 1rem;
+
+    .icon {
+      display: flex;
+      width: 90px;
+      flex-direction: column;
+      align-items: center;
+      width: max-content;
+      text-align: -webkit-center;
+      cursor: default;
+      p {
+        text-align: center;
+        padding: 0 0.25rem;
+        z-index: 1;
+        user-select: none;
+    }
+  }
+}
+}

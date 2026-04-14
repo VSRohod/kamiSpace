@@ -1,0 +1,29 @@
+@media (max-width: 500px) {
+  .drag-resume {
+    width: 95%; 
+  }
+}
+.resume-window{
+  .window-title {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .window {
+        display: flex;
+      }
+      .window-content {
+        display: flex;
+        gap: 15px;
+      }
+      .footer {
+        display: block;
+        margin: 0.25rem;
+        height: 31px;
+        line-height: 31px;
+        padding-left: 0.25rem;
+      }
+}
+
+

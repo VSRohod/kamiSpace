@@ -1,0 +1,14 @@
+.buttons {
+    display: flex;
+  }
+.download-button {
+  width: fit-content !important;
+  padding: 0 10px !important;
+  margin-right: 5px;
+}
+.minimise-icon {
+    display: inline-block;
+    border-bottom: 2.7px solid black;
+    padding: 0 4px;
+    margin-bottom: 5px;
+}
